@@ -72,3 +72,28 @@ export const fetchCharacterByIdApi = async (id: number) => {
     throw error; // Rethrow the error if you want to handle it later
   }
 };
+
+export const fetchCharactersByNameApi = async (name: string, offset: number) => {
+  try {
+    const response = await fetch(
+      `${MARVEL_API_BASE_URL}/characters?apikey=${MARVEL_API_KEY}&nameStartsWith=${name}&limit=10&offset=${offset}`
+    );
+
+    // Check if the response is successful
+    if (!response.ok) {
+      throw new Error(`Error fetching characters by name: ${response.status} ${response.statusText}`);
+    }
+
+    const results = await response.json();
+
+    // Ensure that data is present
+    if (!results.data) {
+      throw new Error('No character data found for the search query');
+    }
+
+    return results.data;
+  } catch (error) {
+    console.error(error);
+    throw error;
+  }
+};

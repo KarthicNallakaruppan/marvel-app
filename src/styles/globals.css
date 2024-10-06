@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --screen-ui: #111111;
+  --bg-ui: #212121;
+  --bg-shade-ui: #414141;
+  --on-surface-ui: #fff;
+}
+
+body {
+  color: var(--on-surface-ui);
+  background: var(--screen-ui);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}

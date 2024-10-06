@@ -57,7 +57,7 @@ npm run build
 
 ### Deployment
 
-I have deployed this project using Vercel. You can find the live demo here: [Live Demo](https://marvel-app-swart.vercel.app/).
+I have deployed this project using Vercel. You can find the live demo here: [Live Demo](https://marvel-heroes-karthic-nallakaruppan.vercel.app/).
 
 ## Advantages of Using Next.js
 

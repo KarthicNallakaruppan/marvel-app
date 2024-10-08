@@ -20,7 +20,7 @@ const Header: React.FC = () => {
 
         {/* Menu Section */}
         <nav className="flex space-x-8">
-          <Link href="/characters">Characters
+          <Link href="/characters/list">Characters
           </Link>
           <Link href="/comics"  className="text-foreground font-medium">
             Comics

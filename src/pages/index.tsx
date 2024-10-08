@@ -19,7 +19,7 @@ export default function Home() {
   return (
     <section className={`${geistSans.variable} ${geistMono.variable}`}>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4">
-        <Link href='/characters' className="col-span-3 sm:col-span-1 md:col-span-3 bg-base-600 border border-base-700 rounded-lg h-3/5 flex flex-col">
+        <Link href='/characters/list' className="col-span-3 sm:col-span-1 md:col-span-3 bg-base-600 border border-base-700 rounded-lg h-3/5 flex flex-col">
           <div className="relative flex flex-col overflow-hidden rounded-lg px-4 py-4 flex-grow">
             <Image
               src='/character.jpg'

@@ -1,6 +1,6 @@
 import React from 'react';
-import Card from './../components/card';
-import { CharacterListProps, ChipColor } from '../api/characterInterfaces'
+import Card from '../common/card';
+import { CharacterListProps, ChipColor } from '../../api/characterInterfaces'
 import Link from 'next/link';
 
 const CharacterList: React.FC<CharacterListProps> = ({ characters }) => {

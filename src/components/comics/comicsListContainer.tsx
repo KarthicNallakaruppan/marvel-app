@@ -1,9 +1,9 @@
 import React, { useEffect, useState, useRef } from 'react';
 import ComicsList from './comicsList';
-import Loader  from '../components/loader';
-import { fetchComicsApi } from './../api/services';
-import { ComicsResult }  from './../api/comicsInterface'
-import ErrorCard from './../components/errorCard'
+import Loader  from '../common/loader';
+import { fetchComicsApi } from '../../api/services';
+import { ComicsResult }  from '../../api/comicsInterface'
+import ErrorCard from '../common/errorCard'
 
 const ComicsListContainer: React.FC = () => {
   const [comics, setcomics] = useState<ComicsResult[]>([]);

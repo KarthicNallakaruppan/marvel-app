@@ -1,12 +1,12 @@
 // pages/characters/[id].tsx
 import { useRouter } from 'next/router';
 import React, { useEffect, useState } from 'react';
-import { fetchCharacterByIdApi } from './../api/services';
-import { Character } from '../api/characterInterfaces';
+import { fetchCharacterByIdApi } from '../../api/services';
+import { Character } from '../../api/characterInterfaces';
 import Image from 'next/image';
-import List from '../components/list';
-import { debounce } from './../api/utilities';
-import Loader  from '../components/loader';
+import List from '../../components/common/list';
+import { debounce } from '../../api/utilities';
+import Loader  from '../../components/common/loader';
 
 const CharacterPage: React.FC = () => {
   const router = useRouter();

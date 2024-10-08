@@ -5,12 +5,12 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
+  src: "../fonts/GeistVF.woff",
   variable: "--font-geist-sans",
   weight: "100 900",
 });
 const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
+  src: "../fonts/GeistMonoVF.woff",
   variable: "--font-geist-mono",
   weight: "100 900",
 });
@@ -26,6 +26,7 @@ export default function Home() {
               alt='View Marvel characters'
               width={500}
               height={500}
+              priority
               className="object-cover w-full h-full rounded-lg" 
             />
           </div>

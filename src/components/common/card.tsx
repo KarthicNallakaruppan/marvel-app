@@ -32,6 +32,9 @@ const Card: React.FC<CardProps> = ({
             src={imageUrl} 
             alt={title} 
             fill
+            priority
+            sizes="(max-width: 808px) 50vw, 100vw"
+            quality={100}
             className="object-cover w-full h-full transition-transform duration-500 ease-[cubic-bezier(0.25, 1, 0.5, 1)] transform group-hover:scale-110" 
         />
       </div>

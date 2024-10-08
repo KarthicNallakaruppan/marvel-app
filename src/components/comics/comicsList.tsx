@@ -1,6 +1,6 @@
 import React from 'react';
-import Card from './../components/card';
-import { ComicsListProps } from '../api/comicsInterface'
+import Card from '../common/card';
+import { ComicsListProps } from '../../api/comicsInterface'
 
 
 const ComicsList: React.FC<ComicsListProps> = ({ comics }) => {

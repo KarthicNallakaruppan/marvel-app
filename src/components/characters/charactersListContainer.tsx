@@ -1,10 +1,10 @@
 import React, { useEffect, useState, useRef, useCallback } from 'react';
 import CharacterList from './charactersList';
-import Loader from '../components/loader';
-import { fetchCharactersApi, fetchCharactersByNameApi } from './../api/services';
-import { CharacterResult } from '../api/characterInterfaces';
-import ErrorCard from './../components/errorCard';
-import { debounce } from './../api/utilities';
+import Loader from '../common/loader';
+import { fetchCharactersApi, fetchCharactersByNameApi } from '../../api/services';
+import { CharacterResult } from '../../api/characterInterfaces';
+import ErrorCard from '../common/errorCard';
+import { debounce } from '../../api/utilities';
 
 const CharacterListContainer: React.FC = () => {
   const [characters, setCharacters] = useState<CharacterResult[]>([]);

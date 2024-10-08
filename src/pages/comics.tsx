@@ -1,5 +1,5 @@
 // `app/dashboard/page.tsx` is the UI for the `/dashboard` URL
-import ComicsListContainer from './comics/comicsListContainer'
+import ComicsListContainer from '../components/comics/comicsListContainer'
 
 export default function Comics() {
     return (
